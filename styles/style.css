@@ -22,6 +22,12 @@ header {
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.185);
 }
 
+h2 {
+    color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 20px;
+}
+
 .logo {
     width: 250px;
     transition: all 0.2s;
@@ -66,6 +72,18 @@ header {
     border-radius: 0 0 15px 15px;
 }
 
+.localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo2 {
+    max-width: 30%;
+    margin-right: 20px;
+}
+
 .whats {
     position: fixed;
     bottom: 5px;
@@ -106,11 +124,29 @@ footer img:hover {
     scale: 1.1;
 }
 
+@media screen and (max-width: 1000px) {
+    .contato {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .mapa {
+        height: 5%;
+    }
+}
+
 @media screen and (max-width: 700px) {
     header {
         flex-direction: column;
         justify-content: center;
         padding: 20px;
+    }
+
+    h2 {
+        font-size: 1em;
     }
     
     .logo {
@@ -124,6 +160,10 @@ footer img:hover {
     .sociais i {
         width: 15px;
         margin-left: 10px;
+    }
+
+    .mapa {
+        height: 5%;
     }
 
     .whats img {
@@ -143,6 +183,10 @@ footer img:hover {
     .whats img {
         width: 50px;
     }
+
+    p {
+        font-size: 0.8em;
+    }
     
     footer {
         font-size: 8px;
@@ -152,6 +196,10 @@ footer img:hover {
 @media screen and (max-width: 304px) {
     .texto h1 {
         font-size: 1em;
+    }
+
+    p {
+        font-size: 0.5em;
     }
     
     footer {
