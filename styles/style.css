@@ -125,6 +125,10 @@ footer img:hover {
 }
 
 @media screen and (max-width: 1000px) {
+    .localizacao {
+        flex-direction: column;
+    }
+    
     .contato {
         display: none;
     }
@@ -135,6 +139,7 @@ footer img:hover {
 
     .mapa {
         height: 5%;
+        margin-bottom: 20px;
     }
 }
 
